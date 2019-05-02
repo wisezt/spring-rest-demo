@@ -31,10 +31,18 @@
 		<!-- Add Servlet support for 
 			 Spring's AbstractAnnotationConfigDispatcherServletInitializer -->
 		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+	<!-- Add JSP support -->
+			<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>javax.servlet.jsp-api</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+
 				 
 	</dependencies>
 

@@ -12,7 +12,7 @@
 This is a RestAPI test!
 </p>
 
-<a href ="/test/hello">a RestAPI Link</a>
+<a href ="${pageContext.request.contextPath}/test/hello">a RestAPI Link</a>
 
 </body>
 </html>

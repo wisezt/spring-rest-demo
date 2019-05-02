@@ -12,5 +12,7 @@
 This is a RestAPI test!
 </p>
 
+<a href ="/test/hello">a RestAPI Link</a>
+
 </body>
 </html>

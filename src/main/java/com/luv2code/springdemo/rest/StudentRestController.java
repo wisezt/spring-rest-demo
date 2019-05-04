@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,14 +14,22 @@ import java.util.List;
 @RequestMapping("/api")
 public class StudentRestController {
     List<Student> theStudents;
-    public StudentRestController() {
+//    public StudentRestController() {
+//        theStudents = new ArrayList<>();
+//        theStudents.add(new Student("Ting001", "Zheng001"));
+//        theStudents.add(new Student("Ting002", "Zheng002"));
+//        theStudents.add(new Student("Ting003", "Zheng003"));
+//
+//    }
+
+    @PostConstruct
+    public void loadData(){
         theStudents = new ArrayList<>();
         theStudents.add(new Student("Ting001", "Zheng001"));
         theStudents.add(new Student("Ting002", "Zheng002"));
         theStudents.add(new Student("Ting003", "Zheng003"));
 
     }
-
 
 
     // define endpoint for "/students" - return list of students
